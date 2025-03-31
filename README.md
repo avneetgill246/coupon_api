@@ -1,3 +1,6 @@
+
+COUPON API Assignment
+
 Design
 Implemented a factory design base with all coupon types having different subclass. Its similar to Spring security Authentication Provider where it checks different Authentication provider if they can handle the request. Implemented diff coupon type classes , each having applyCoupon method and isApplicable static method. isApplicable is made static as for checking each coupon to be applicable on a cart , creating a new object of coupontype from factory will not be efficient. Different subclasses for each coupon also helps in future extensibility and makes it easier to add new coupon types. 
 
